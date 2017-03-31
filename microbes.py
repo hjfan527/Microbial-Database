@@ -7,6 +7,7 @@ cgitb.enable()
 #let the internet know that you'll be feeding it html
 print("Content-type: text/html\n")
 
+form = cgi.FieldStorage()
 
 print("""<!DOCTYPE html>
 <html>
