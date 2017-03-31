@@ -1,0 +1,59 @@
+body {
+	background-color: #cc0000;
+}
+
+#headerImage {
+	position: relative;
+	top: 5px;
+	padding-top: -5px;
+	padding-top: -5px;
+}
+
+#header {
+	z-index: 1;
+	height: 80px;
+	position: relative;
+	width: 101%;
+	background-color: white;
+	text-align: center;
+	margin-top: -20px;
+	margin-left: -8px;
+}
+
+#bannerImage {
+	position: relative;
+	height: 80px;
+	text-align: center;
+	position: relative;
+	margin-top: -20px;
+	margin-left: -5px;
+}
+
+table {
+	position: absolute;
+	background-color: white;
+	margin-top: 100px;
+	left: 50%; 
+    -webkit-transform: translate(-50%, 0);
+	
+}
+
+table {
+	position: absolute;
+	background-color: white;
+	margin-top: 100px;
+	left: 50%; 
+    -webkit-transform: translate(-50%, 0);
+	
+}
+
+.formBox:hover {
+	background-color: #4DC2F4;
+}
+	
+p {
+	color: black;
+	font-size: 30px;
+	margin-top: 75px;
+	position: relative;
+}
