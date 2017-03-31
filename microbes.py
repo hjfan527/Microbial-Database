@@ -1,10 +1,17 @@
 #!/usr/local/Python-3.5.3/bin/python
+
+#import all of the modules you need - cgi and pymysql, and cgitb would help.
+#don't forget to enable cgitb
 import cgi
+import pymysql
 import cgitb
 cgitb.enable()
-import pymysql
 
+#let the internet know that you'll be feeding it html
 print("Content-type: text/html\n")
+
+#get the form data (it will all be "nonetype" until someone hits 'submit')
+form = cgi.FieldStorage()
 
 print("""<!DOCTYPE html>
 <html>
