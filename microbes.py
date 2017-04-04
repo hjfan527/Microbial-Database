@@ -1,14 +1,16 @@
 #!/usr/local/Python-3.5.3/bin/python
+
+#import all of the modules you need - cgi and pymysql, and cgitb would help.
+#don't forget to enable cgitb
 import cgi
 import pymysql
 import cgitb
 cgitb.enable()
 
-#let the internet know that you'll be feeding it html
+#let the internet know that you'll be feeing it html
 print("Content-type: text/html\n")
 
-form = cgi.FieldStorage()
-
+#print out some html! Use string substitutions to make your life easier.
 print("""<!DOCTYPE html>
 <html>
 	<head>
@@ -88,3 +90,5 @@ print("""<!DOCTYPE html>
 		</div>
 	</body>
 </html>""")
+
+
