@@ -14,8 +14,69 @@ print("Content-type: text/html\n")
 print("""<!DOCTYPE html>
 <html>
 	<head>
+		<style>
+				body {
+			background-color: #cc0000;
+		}
+
+		#headerImage {
+			position: relative;
+			top: 5px;
+			padding-top: -5px;
+			padding-top: -5px;
+		}
+
+		#header {
+			z-index: 1;
+			height: 80px;
+			position: relative;
+			width: 101%;
+			background-color: white;
+			text-align: center;
+			margin-top: -20px;
+			margin-left: -8px;
+		}
+
+		#bannerImage {
+			position: relative;
+			height: 80px;
+			text-align: center;
+			position: relative;
+			margin-top: -20px;
+			margin-left: -5px;
+		}
+
+		table {
+			position: absolute;
+			background-color: white;
+			margin-top: 100px;
+			left: 50%; 
+			-webkit-transform: translate(-50%, 0);
+			
+		}
+
+		table {
+			position: absolute;
+			background-color: white;
+			margin-top: 100px;
+			left: 50%; 
+			-webkit-transform: translate(-50%, 0);
+			
+		}
+
+		.formBox:hover {
+			background-color: #4DC2F4;
+		}
+			
+		p {
+			color: black;
+			font-size: 30px;
+			margin-top: 75px;
+			position: relative;
+		}
+		</style>
+		
 		<title>Microbial Database</title>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
 	</head>
 	<body>
 		<div id="header">
@@ -74,7 +135,7 @@ print("""<!DOCTYPE html>
 
 				<tr>
 					<td>
-					<form id="search" name="search" action="https://bioed.bu.edu/cgi-bin/students_17/Group1/microbes.py" method="post" enctype="multipart/form-data">
+					<form id="search" name="search" action="https://bioed.bu.edu/cgi-bin/students_17/gellerup/search_upload.py" method="post" enctype="multipart/form-data">
 					Search:<textarea name="microbe" rows= cols=>Enter Species Name</textarea>
 					</form>
 					<input class="formBox" type="submit" value="SEARCH">
